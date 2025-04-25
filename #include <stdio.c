@@ -3,31 +3,38 @@
 int main(){
 
 
-
-    int numero;
-
+    int i = 0;
     
-    do { 
-        printf("digite um numero impar para prosseguir no programa, ou um numero par para sair!\n");
-        scanf("%d" , &numero);
+            //Mover a TORRE, 5 casa para a direita
+            do{
+            printf(" *** Torre ***\n"); //saida de dados
+            printf("DIREITA\n"); //direção
+            i++;//incremento
+            }while(i <= 4); // condição 
 
-        if(numero / 2 ==0){
-            printf("numero %d é impar!\n",numero);
-        }else{
-            printf("numero %d é par!\n",numero);
-        }
+            printf("\n"); //pular linha
 
-    }while (numero % 2 !=0);
+            //Mover o BISPO, 5 casa para direita
+            i = 0;
+            while (i <= 4){ // Condição 
+            printf("*** Bispo ***\n"); //saida de dados
+            printf("CIMA,DIREITA\n"); //direção
+            i++; //incremento
+            };
 
-    printf("voce digitou um numero par, SAINDO...\n");
+            printf("\n"); //pular linha
 
-    
-    
+        // Mover a RAINHA, 8 casa para esquerda
+            i = 0; //variavel
+            for(i ; i <= 7; i++){ // Condição
+             printf("*** Rainha ***\n"); //saida de dados
+            printf("ESQUERDA\n");  //Direção
+            };
+           
+            
+       
+
 return 0;
+
 }
-
-
-
-
-
 
