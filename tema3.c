@@ -5,6 +5,7 @@ int main(){
 
 
     int i = 0;
+    int finalizar_movimento = 1;
     
             //Mover a TORRE, 5 casa para a direita
             do{
@@ -32,8 +33,20 @@ int main(){
             printf("ESQUERDA\n");  //Direção
             };
            
-            
-       
+            printf("\n"); //pular linha
+
+            //Movimento do CAVALO
+            printf("*** Cavalo ***\n"); //saida de dados
+            while (finalizar_movimento--){ // Condição
+           
+            for (int j = 0; j < 2; j++){ // Condição e incremento
+            printf("BAIXO\n"); //DIREÇÃO
+            }
+            printf("ESQUERDA\n"); //DIREÇÃO
+
+            printf("\n"); //pular linha
+
+        }
 
 return 0;
 
